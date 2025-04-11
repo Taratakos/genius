@@ -116,7 +116,6 @@
 //   }, 0) / girls.length;
 // console.log(age);
 
-
 const items = ["apple", "banana", "apple", "orange", "banana", "apple"];
 
 const count = items.reduce((accumulator, item) => {
