@@ -95,41 +95,5 @@ Object.assign(User.prototype, message);
 
 new User("John").messageHello();
 */
-/**
- * Створіть функцію-конструктор Calculator, який створює об’єкти з трьома
-методами:
-read() запитує два значення за допомогою prompt і запам’ятовує їх у
-властивостях об’єкта.
-sum() повертає суму цих властивостей.
-mul() повертає результат множення даних властивостей.
- */
 
-function Calculator() {
-  // запитує два значення через промт і запам'ятовує їх у властивостях об'єкта
-  this.read = function () {
-    this.a = parseFloat(prompt("Enter the first number", 0));
-    this.b = parseFloat(prompt("Enter the second number", 0));
-  };
-  // sum() повертає суму цих властивостей.
-  this.sum = function () {
-    const numberSum = this.a + this.b;
-    console.log(numberSum);
-    return numberSum;
-  };
-  // mul() повертає результат множення даних властивостей.
-  this.mul = function () {
-    const numberMultiplication = this.a * this.b;
-    console.log(numberMultiplication);
-    return numberMultiplication;
-  };
-}
 
-const calculator = new Calculator();
-calculator.read();
-console.log(`First number:${calculator.a}, Second number:${calculator.b}`);
-console.log(calculator);
-
-// console.log(`Sum:`, calculator.sum());
-// console.log(`Mul:`, calculator.mul());
-calculator.sum();
-calculator.mul();
